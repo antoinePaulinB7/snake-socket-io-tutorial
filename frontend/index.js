@@ -37,29 +37,6 @@ let canvas, ctx;
 let playerNumber;
 let gameActive = false;
 
-const gameState = {
-    player: {
-        pos: {
-            x: 3,
-            y: 10
-        },
-        vel: {
-            x: 1,
-            y: 0,
-        },
-        snake: [
-            {x: 1, y: 10},
-            {x: 2, y: 10},
-            {x: 3, y: 10}
-        ]
-    },
-    food: {
-        x: 7,
-        y: 7
-    },
-    gridSize: 20
-}
-
 function init() {
     initialScreen.style.display = "none";
     gameScreen.style.display = "block";
